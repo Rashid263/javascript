@@ -7,13 +7,21 @@
     </head>
     <body>
         <section class="content">
-            <div class="header">
+            <header class="header">
                 <h2><script>document.write("Tutorial: Javascript Fundamentals")</script></h2>
-            </div>
-            <div class="maincontent">
-                
-                <script>
+            </header>
+            <section class="maincontent">
+                <!-- <div id="md" onclicl="liveproject(this)">Click Here</div> -->
+                <!-- <div id="rashid">Click Here</div>
+                <hr/>  -->
 
+               <!-- <input id="codetext" type="text"/> -->
+                <!-- <button onkeyup = "checkEvent()">Your Action</button> -->
+                <!-- <input type="text" onblur = "checkEvent()"/> -->
+                <!-- <div id="show"></div>  -->
+
+                <script>
+                 
                     //   var myname = "Md Abdur Rashid";
                 //   document.write(myname);
                 //   document.write("<br/>");
@@ -36,17 +44,122 @@
                   //document.write("outside function color is: "+color);
 
                      //innerHTML, document.write(), window.alert(), console.l
-                     console.time("check time");
-                     var sum = 5+2;
-                     console.log(sum);
-                     console.timeEnd ("check time");
+                    //  console.time("check time");
+                    //  var sum = 5+2;
+                    //  console.log(sum);
+                    //  console.timeEnd ("check time");
+                    // var arr1 = [1, 2, 3, 4, 5]
+                    // var arr2 = [4, 5, 6, 7, 8]
+                    // var getarr = arr1.concat(arr2)
+                    // document.write(getarr);
+
+                    // sorting
+                    // var num = [10, 1020, 50, 30, 80, 70, 35];
+                    // document.write("Before Sorting: "+num+"<br/>")
+                    // num.sort();
+
+                    // function arrsort(x, y){
+                        // return(y-x);
+                    // }
+                    // num.sort(arrsort);
+                    // num[num.length]="500000";
+                    // num.shift();
+                    // num.unshift(90);
+                    //  num.pop();
+                    //  num.push();
+                    // document.write(num);
+                    // var person = {
+                    //     firstname: "md abdur rashid ",
+                    //     lastname: "bijoy",
+                    //     age: 30,
+                    //     func:function (){
+                    //         return this.firstname + this.lastname;
+                    //     }
+                    // }
+                    // document.write(person.firstname);
+
+                    // this is data and data type
+                    // var x = new String ("rashid");
+                    // var x = true;
+                    // var x = [1, 2, 3];
+                    // var x = null;
+                    // document.write(typeof(x));
+
+                    // this is repetition section
+
+                    // for(i=1; i<=10; i++){
+                    //     document.write("2*"+i+"="+i*2+"<br/>");
+                    // }
+                    // var i = 0;
+                    // while(true){
+                    //     if(i==10){break;}
+                    //     i++;
+                    //     document.write(i+"</br>");
+                    // }
+                    // var i = 20;
+                    // do{
+                    //     document.write(i+"</br>");
+                    // }while(i<10);
+                    // var i = 0;
+                    // var color =["red", "green", "purple", "blue"];
+                    // for(i in color){
+                    //     document.write(color[i]+"<br/>");
+                    // }
+                    // var i = 0;
+                    // var obj ={a:1, b:2, c:3};
+                    // for(i in obj){
+                    // document.write(obj[i]+"<br/>");
+                    // }
+                //    function checkcoding(){
+                //        var txt;
+                //        var coding = document.getElementById("codetext").value;
+                   
+                //    switch(coding){
+                //        case "java":
+                //           txt = "i love java";
+                //           break;
+                //         case "php":
+                //           txt = "php is nice.";
+                //           break;
+                //         case "c#":
+                //           txt = "c# is good.";
+                //           break;
+
+                //         default: 
+                //           txt = "unknown....."; 
+                //    }
+                //    document.getElementById("show").innerHTML = txt;
+                // }
+                // function checkEvent(){
+                //     console.log("Your event here...");
+                // }
+                // var div1 = document.getElementById("md").innerHTML;
+                // var div2 = document.querySelector("div").innerHTML;
+                // var div3 = document.querySelectorAll("div")[0].innerHTML;
+                // var div4 = document.getElementsByTagName("div")[0].innerHTML;
+                // document.write(div1+"<br/>"+div2+"<br/>"+div3+"<br/>"+div4);
+                // function liveproject(event){
+                //     alert(event);
+                //     alert(this);
+                // }
+                // liveproject();
+                 function totalNum(a, b){
+                    this.x = a;
+                    this.y = b;
+                    this.sum = function() {
+                        return this.x + this.y;
+                    }
+                 }
+
+                  var tn = new totalNum(10,5);
+                  console.log(tn.toString());
 
                </script>
-            </div>
+            </section>
 
-            <div class="footer">
+            <footer class="footer">
               <h2><script>document.write("Training with live project")</script></h2>
-            </div>
+            </footer>
         </section>
     </body>
 </html>
