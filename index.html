@@ -11,17 +11,116 @@
                 <h2><script>document.write("Tutorial: Javascript Fundamentals")</script></h2>
             </header>
             <section class="maincontent">
-                <!-- <div id="md" onclicl="liveproject(this)">Click Here</div> -->
-                <!-- <div id="rashid">Click Here</div>
-                <hr/>  -->
+                <!-- <div id="show"></div> 
+                <button onclick="myreg()">Replace</button>
+                <div id="show">My name is Rashid</div> -->
+                <!-- <button onclick="myreg()">Search</button>
+                <div id="md" onclicl="liveproject(this)">Click Here</div>
+                <div id="rashid">Click Here</div> -->
+                <!-- <hr/>  -->
 
-               <!-- <input id="codetext" type="text"/> -->
+               <!-- <input id="codetext" type="text"/> -->  
                 <!-- <button onkeyup = "checkEvent()">Your Action</button> -->
                 <!-- <input type="text" onblur = "checkEvent()"/> -->
                 <!-- <div id="show"></div>  -->
+                <!-- <div>
+                    <span id="hour"></span>:
+                    <span id="minute"></span>:
+                    <span id="second"></span>
+                </div>
+            </div>
+                    <BUtton onclick="fadeOut()">start</BUtton>
+                    <img src="img/flower3.jpg" id="myimage"/>
+                </div> -->
+                <!-- <form name="frm">
+                    <table>
+                        <caption>Example of Different Method and Properties of Math Object</capt
+                            <tr>
+                                <td>Input Box: </td>
+                                <td><input type="text" name="getvalue"/></td>
+                            </tr>
 
-                <script>
-                 
+                            <tr>
+                                <td><input type="button" value="Absolute" onclick="calculate(1)"/></td>
+                                <td><input type="button" value="Round" onclick="calculate(2)"/></td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="button" value="Sine" onclick="calculate(3)"/></td>
+                                <td><input type="button" value="Cosine" onclick="calculate(4)"/></td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="button" value="Tangent" onclick="calculate(5)"/></td>
+                                <td><input type="button" value="Log" onclick="calculate(6)"/></td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="button" value="Floor" onclick="calculate(7)"/></td>
+                                <td><input type="button" value="Ceil" onclick="calculate(8)"/></td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="button" value="Square Root" onclick="calculate(9)"/></td>
+                                <td><input type="button" value="Random" onclick="calculate(10)"/></td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="button" value="Max" onclick="calculate(11)"/></td>
+                                <td><input type="button" value="Min" onclick="calculate(12)"/></td>
+                            </tr>
+
+                            <tr>
+                                <td><input type="button" value="E" onclick="calculate(13)"/></td>
+                                <td><input type="button" value="Pi" onclick="calculate(14)"/></td>
+                            </tr>
+
+                            <tr>
+                                <td>Result Box: </td>
+                                <td><input type="text" name="showresult"/></td>
+                            </tr>
+
+                    </table>
+                </form> -->
+                <!-- <button onclick="myreg()">Test Now</button>
+                <div id="str">My name is Rashid</div>
+                <div id="show"></div>
+                <table>
+                    <tr>
+                        <td>Your input</td>
+                        <td><input type="text" id="getValue"/></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input type="button" value="Check" onclick="getNumber()"/></td>
+                    </tr>
+                    <tr>
+                        <td>Result</td>
+                        <td><textarea id="showValue"></textarea></td>
+                    </tr>
+                </table>
+                <script type="text/javascript">
+                   /* Mango-82  Banana-980 Appel-9908
+                    802ABC973XYZ68
+                    $1 $2 $987 ABC(200)  
+                    */
+
+                   function getNumber() {
+                    document.getElementById("showValue").value = "";
+                       var getString = document.getElementById("getValue").value;
+                       var result = getString.match(/\d+/g);
+                    //    document.getElementById("showValue").value = result;
+                       if (result != null) {
+                       for (var i =0; i<result.length; i++) {
+                        document.getElementById("showValue").value += result[i]+"\n"; 
+                           
+                       }
+                   }
+                }
+                //  function myreg() {
+                //      txt = document.getElementById("str").innerHTML;
+                //      document.getElementById("show").innerHTML = /f/.test(txt);
+                //  }
                     //   var myname = "Md Abdur Rashid";
                 //   document.write(myname);
                 //   document.write("<br/>");
@@ -33,7 +132,7 @@
                 //   document.write("sum is : "+sum+" and product is: "+pro);
                 //   document.write("<br/>"); -->
 
-                // //   var color = "green";
+                <!-- // //   var color = "green";
                 //   function functionone(){
                 //       window.color = "red";
                 //       document.write("inside function color is: "+color);
@@ -143,18 +242,316 @@
                 //     alert(this);
                 // }
                 // liveproject();
-                 function totalNum(a, b){
-                    this.x = a;
-                    this.y = b;
-                    this.sum = function() {
-                        return this.x + this.y;
-                    }
-                 }
+                //  function totalNum(a){
+                //      //private
+                //     x = 20;
+                //     total = function() {
+                //         return x + a;
+                //     };
+                //     this.product = function() {
+                //         return 30;
+                //     }
+                //  }
+                //public
+                //  this.result = function () {
+                //      this.sum = total ();
+                //      return "Result is "+this.sum;
+                //  }
+                // }
+                //  function productNum(a, b){
+                //     this.x = a;
+                //     this.y = b;
+                //     this.product = function() {
+                //         return this.x * this.y;
+                //     }
+                //  }
+                //  totalNum.prototype = new productNum();
+                //  var tn = new totalNum(10);
+                //  tn.product = function () {
+                    //  return 500;
+                //  }
+                //   console.log(tn.result());
 
-                  var tn = new totalNum(10,5);
-                  console.log(tn.toString());
+                // function totalNum(){
+                //    this.x = 20;
+                //     this.y = function() {
+                //         return this.x + this.x;
+                //     }
+                //  }
 
-               </script>
+                //  totalNum.prototype.a = 200;
+                //  totalNum.b = 800;
+
+                //  var tn = new totalNum();
+                // //  tn.a = 1000;
+                //  console.log(totalNum.b);
+                // function revme(s) {
+                //     return s.split("").reverse().join("");
+                // }
+                // var x = "A B C D";
+                // var rv = revme(x);
+                // document.write(rv);
+                // String.prototype.revme = function(){
+                //     var s = "";
+                //     var i = this.length;
+                //     while(i>0){
+                //         s += this.substring(i-1, i);
+                //         i--;
+                //     }
+                //     return s;
+                // }
+                // var x = "A B C D"
+                // document.write(x.revme());
+                // function myFunction(){
+                //     var str = "Delowar Jahan Imran";
+                //     var res = str.substring(2,9);
+                //     document.write(res);
+                // }
+                // myFunction();
+                
+                
+                // var timeout;
+                // function timeoutTrigger(){
+                //     document.getElementById("show").innerHTML = "the timeout has been Trigered...after 3 seconds";
+                // }
+               
+                // function timeInit(){
+                //     timeout = setTimeout("timeoutTrigger()", 3000);
+                //     document.getElementById("show").innerHTML = "the timeout has been started";
+                // }
+                // function timeclear(){
+                //     clearTimeout(timeout)
+                //     document.getElementById("show").innerHTML = "the timeout has been cleared...";
+                // }
+
+            //     var countdown;
+            //     var countdownNumber;
+
+            //     function countdownInit(){
+            //         countdownNumber = 21;
+            //         countdownTrigger();
+            //     }
+
+            //    function countdownTrigger() {
+            //        if (countdownNumber > 0 ) {
+            //            countdownNumber-- ;
+            //            document.getElementById("show").innerHTML = countdownNumber;
+            //            if (countdownNumber > 0) {
+            //                countdown = setTimeout("countdownTrigger()", 1000);
+            //            }
+            //        }
+            //    }
+                // function timeInit(){
+                //     timeout = setTimeout("timeoutTrigger()", 3000);
+                //     document.getElementById("show").innerHTML = "the timeout has been started";
+                // }
+                // function countdownclear(){
+                //     clearTimeout(countdown);
+                //     // document.getElementById("show").innerHTML = "the countdown has been cleared...";
+                // }
+                // setTimeout(function() {
+                //     alert("javascript fundamentals");
+                // }, 1000)
+                // var i = 0;
+                // var x = setInterval(function() {
+                //     i++;
+                //     alert("javascript fundamentals");
+                //     if(i==5){
+                //         clearInterval(x);
+                //     }
+                // }, 3000)
+                // function clock() {
+                    
+                
+                // var date = new Date();
+
+                // var hour = date.getHours();
+                // var minute = date.getMinutes();
+                // var second = date.getSeconds();
+
+                // document.getElementById("hour").innerHTML = hour;
+                // // document.getElementById("minute").innerHTML = minute;
+                // document.getElementById("second").innerHTML = second;
+                // }
+                // setInterval(clock, 1000);
+                // document.write(date);
+                // var element = document.getElementById("myimage");
+                // var duration = 1000;
+                // var hidtime = 1000;
+                // var showtime = 1000;
+                // function setOpacity(value) {
+                //      element.style.opacity = value;
+                //     }
+                //  function fadeOut() {
+                //      for(i=0; i<=1; i+=0.01){
+                //          setTimeout("setOpacity("+(1-i)+")", i*duration);
+                //      }
+                //      setTimeout("fadeIn()", (duration+hidtime));
+                //  }
+
+                //  function fadeIn() {
+                //     for(i=0; i<=1; i+=0.01){
+                //          setTimeout("setOpacity("+i+")", i*duration);
+                //      }
+                //      setTimeout("fadeOut()", (duration+showtime));
+                //     }
+                // var date = new Date();
+                // console.log(date.getFullYear());
+                // console.log(date.getMonth());
+                // console.log(date.getDate());
+                // console.log(date.getHours());
+                // console.log(date.getSeconds());
+                // console.log(date.getMilliseconds());
+                // console.log(date.getTime());
+                // var str = "Training with live Project. we offer Project base live training.";
+                // var result = str.lastIndexOf('Project');
+                // document.write(result);
+                // var num = [1,2,3,4,5,6,7,8,9,10];
+                // // var str = ["red", "green", "white"]
+                // var isPresent = num.indexOf(8);
+                // if (isPresent > -1) {
+                //     document.write("yes, it is exit...");
+                // } else {
+                //     document.write("no, it is exit...");
+                // }
+                // alert("WELCOME.....")
+                // function livepro() {
+                //     confirm("do u want to go...?");
+                // }
+                // var name = prompt ("please enter your name...");
+                // if (name == "") {
+                //     alert("field must not be empty !");
+                // } else {
+                //     document.write("name is: "+name);
+                // }
+                // var numString = "10";
+                // var numGen = "10";
+
+                // console.log(typeof numString);
+                // console.log(typeof numGen);
+
+                // if (numString === numGen) {
+                //     document.write("yes it is true.");
+                // } else {
+                //     document.write("no it is not true");
+                // }
+                // var value = true;
+                // function myfunc(){
+                //     if(!value){
+                //         var value = 200;
+                //     }
+                //     document.write(value);
+                // }
+                // var value = true;
+                // function myfunc(){
+                //     if(!value){
+                //         var value = 200;
+                //     }
+                //     document.write(value);
+                // }
+
+                // myfunc();
+
+                // recursion
+                // var num = prompt("find the factorial number......");
+                // function factorial(n) {
+                //     if (n==0) {
+                //         return 1;
+                //     } else {
+                //         // n*factorial(n-1);
+                //         product = 1;
+                //         for (i = 1; i<=n; i++) {
+                //             product*= i;
+                //         }
+                //         return product;
+                //     }
+                // }
+                //     document.write(factorial(5));
+                // function calculate (process){
+                //     with(document.frm)
+                //     switch(process){
+                //         case 1:
+                //         showresult.value = Math.abs(getvalue.value);
+                //         break;
+
+                //         case 2:
+                //         showresult.value = Math.round(getvalue.value);
+                //         break;
+
+                //         case 3:
+                //         showresult.value = Math.sin(convDegreee(getvalue.value));
+                //         break;  
+                        
+                //         case 4:
+                //         showresult.value = Math.cos(convDegreee(getvalue.value));
+                //         break; 
+
+                //         case 5:
+                //         showresult.value = Math.tan(convDegreee(getvalue.value));
+                //         break; 
+
+                //         case 6:
+                //         showresult.value = Math.log(getvalue.value);
+                //         break; 
+
+                //         case 7:
+                //         showresult.value = Math.floor(getvalue.value);
+                //         break;
+
+                //         case 8:
+                //         showresult.value = Math.ceil(getvalue.value);
+                //         break;
+
+                //         case 9:
+                //         showresult.value = Math.sqrt(getvalue.value);
+                //         break;
+
+                //         case 10:
+                //         showresult.value = Math.random();
+                //         break;
+
+                //         case 11:
+                //         alert(Math.max(getvalue.value, prompt('Enter number', '0')) +' is greater the number');
+                //         break;
+
+                //         case 12:
+                //         alert(Math.min(getvalue.value, prompt('Enter numbert', '0')) +' is smaller the number');
+                //         break;
+
+                //         case 13:
+                //         showresult.value = Math.E;
+                //         break;
+
+                //         case 14:
+                //         showresult.value = Math.PI;
+                //         break;
+                //     }
+                // }
+                // function convDegreee(x) {
+                //     return x*22/7/180;
+                // }
+                // var str = "bijoy";
+                // var b64 = btoa(str);
+                // var dcode = atob(b64);
+
+                // document.write(b64);
+                // document.write("<br/>");
+                // document.write(dcode);
+                // function myreg() {
+                //     // var str = "Training with live project";
+                //     // var sr = str.search(/live/i);
+                //     // document.getElementById("show").innerHTML = sr;
+                //     var str = document.getElementById("show").innerHTML;
+                //     var input = str.replace("Rashid", "Bijoy");
+                //     document.getElementById("show").innerHTML = input;
+                // } -->
+                </script>
+               <!-- <button onclick="livepro()">confirm</button> -->
+               <!-- <div>
+                   <input type="button" value="start countdown" onclick="countdownInit()"/>
+                   <input type="button" value="stop countdown" onclick="countdownclear()"/>
+               </div>
+               <div id="show"></div> -->
             </section>
 
             <footer class="footer">
